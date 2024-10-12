@@ -38,13 +38,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
-      <h1 className="text-3xl text-gray-700 font-bold mb-8">Agende seu horário na barbearia</h1>
+      <h1 className="text-3xl text-black font-bold mb-8">Agende seu horário na barbearia</h1>
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md"
       >
         <div className="mb-4">
-          <label className="block text-gray-700 font-semibold mb-2" htmlFor="name">
+          <label className="block text-black font-semibold mb-2" htmlFor="name">
             Nome
           </label>
           <input
@@ -54,11 +54,11 @@ export default function Home() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-semibold mb-2" htmlFor="phone">
+          <label className="block text-black font-semibold mb-2" htmlFor="phone">
             Telefone
           </label>
           <input
@@ -68,11 +68,11 @@ export default function Home() {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg text-black  focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-semibold mb-2" htmlFor="date">
+          <label className="block text-black font-semibold mb-2" htmlFor="date">
             Data
           </label>
           <input
@@ -82,11 +82,11 @@ export default function Home() {
             value={formData.date}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg text-black  focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-semibold mb-2" htmlFor="service">
+          <label className="block text-black font-semibold mb-2" htmlFor="service">
             Serviço
           </label>
           <select
@@ -95,7 +95,7 @@ export default function Home() {
             value={formData.service}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-lg text-black  focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="" disabled>
               Selecione um serviço
